@@ -10,6 +10,7 @@ public class RotatorController : MonoBehaviour
     
     private Camera mainCamera;
     private Vector2 screenMiddle;
+    private Vector3 lastContactPosition = Vector3.zero;
 
     private void Start()
     {
@@ -34,11 +35,24 @@ public class RotatorController : MonoBehaviour
         if (!rayHit)
         {
             canvasHand.enabled = false;
+            lastContactPosition = Vector3.zero;
             return;
         }
 
         canvasHand.enabled = true;
-        int spriteIndex = Input.GetMouseButton(0) ? 1 : 0;
+        bool mouseButtonPressed = Input.GetMouseButton(0);
+        int spriteIndex = mouseButtonPressed ? 1 : 0;
         canvasHand.sprite = canvasHandSprites[spriteIndex];
+        if (mouseButtonPressed && lastContactPosition != hitInfo.point)
+        {
+            Vector3 boundsCenter = hitInfo.collider.bounds.center;
+            
+            Vector3 startVector = lastContactPosition - boundsCenter;
+            Vector3 endVector = hitInfo.point - boundsCenter;
+            
+            float rotationAngle = Vector3.SignedAngle(startVector, endVector, Vector3.up);
+            hitInfo.collider.transform.parent.Rotate(Vector3.up, rotationAngle);
+        }
+        lastContactPosition = hitInfo.point;
     }
 }
