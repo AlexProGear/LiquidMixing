@@ -24,10 +24,10 @@ public class PlayerController : MonoBehaviour
     {
         if (MouseController.CursorLocked)
         {
-            float forwardMovement = Input.GetAxis("Vertical");
-            float sideMovement = Input.GetAxis("Horizontal");
+            float forwardMovement = Input.GetAxisRaw("Vertical");
+            float sideMovement = Input.GetAxisRaw("Horizontal");
             Vector3 direction = transform.forward * forwardMovement + transform.right * sideMovement;
-            rb.velocity = direction * movementSpeed;
+            rb.velocity = direction.normalized * movementSpeed;
         }
     }
 
