@@ -138,11 +138,16 @@ PrefabInstance:
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -152,7 +157,17 @@ PrefabInstance:
       objectReference: {fileID: 868539198}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7642792019034985090}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -162,12 +177,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnSecondLiquidFlowChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LiquidFlowController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FluidLevelController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8815556082547939118, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -471,6 +501,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7642792019034820279}
     m_Modifications:
+    - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
+        type: 3}
+      propertyPath: liquidColor.g
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 575282238204109767, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
         type: 3}
       propertyPath: m_RootOrder
@@ -1136,6 +1171,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7642792019034820277}
     m_Modifications:
+    - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
+        type: 3}
+      propertyPath: liquidColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
+        type: 3}
+      propertyPath: liquidColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
+        type: 3}
+      propertyPath: liquidColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 575282238204109767, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
         type: 3}
       propertyPath: m_RootOrder
@@ -1299,11 +1349,16 @@ PrefabInstance:
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -1313,7 +1368,17 @@ PrefabInstance:
       objectReference: {fileID: 1579866171}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7642792019034985090}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -1323,12 +1388,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnFirstLiquidFlowChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LiquidFlowController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FluidLevelController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
       propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245918639237823791, guid: 36df760a3580fd841b480d4d9aa2c0ed,
+        type: 3}
+      propertyPath: rotationUpdatedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8815556082547939118, guid: 36df760a3580fd841b480d4d9aa2c0ed,
@@ -1503,6 +1583,7 @@ GameObject:
   - component: {fileID: 7642792019034820257}
   - component: {fileID: 7642792019038211713}
   - component: {fileID: 7642792019037244481}
+  - component: {fileID: 7642792019034985090}
   m_Layer: 0
   m_Name: Fluid
   m_TagString: Untagged
@@ -1510,6 +1591,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7642792019034985090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642792019034985089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805d8eb78aedae945ad4a71837601d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTankVolume: 100
+  maxPouringVolumePerSecond: 1
+  minScale: 0.049
+  maxScale: 1
+  firstLiquidColor: {r: 0, g: 0, b: 1, a: 1}
+  secondLiquidColor: {r: 1, g: 0, b: 0, a: 1}
+  tankOverflowEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7642792019034985091
 GameObject:
   m_ObjectHideFlags: 0
