@@ -1179,12 +1179,12 @@ PrefabInstance:
     - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
         type: 3}
       propertyPath: liquidColor.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 575282238204109764, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
         type: 3}
       propertyPath: liquidColor.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 575282238204109767, guid: c292a4e8e4f6bf04ba2f86e32d2af86e,
         type: 3}
@@ -1607,8 +1607,8 @@ MonoBehaviour:
   maxPouringVolumePerSecond: 1
   minScale: 0.049
   maxScale: 1
-  firstLiquidColor: {r: 0, g: 0, b: 1, a: 1}
-  secondLiquidColor: {r: 1, g: 0, b: 0, a: 1}
+  firstLiquidColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+  secondLiquidColor: {r: 0, g: 0, b: 1, a: 0.5019608}
   tankOverflowEvent:
     m_PersistentCalls:
       m_Calls: []

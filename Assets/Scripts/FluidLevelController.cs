@@ -68,8 +68,8 @@ public class FluidLevelController : MonoBehaviour
     private void UpdateLiquidMesh()
     {
         transform.localScale = new Vector3(1, Mathf.Lerp(minScale, maxScale, TankFillPercentage), 1);
-        float firstLiquidPercentage = FirstLiquidVolume / TotalLiquidVolume;
-        renderer.material.color = Color.Lerp(firstLiquidColor, secondLiquidColor, firstLiquidPercentage);
+        float liquidPercentage = SecondLiquidVolume / TotalLiquidVolume;
+        renderer.material.color = Color.Lerp(firstLiquidColor, secondLiquidColor, liquidPercentage);
     }
 
     public void OnFirstLiquidFlowChanged(float newStrength)
