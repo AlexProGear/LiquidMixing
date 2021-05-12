@@ -11,6 +11,19 @@ public class RotatorController : MonoBehaviour
     private Camera mainCamera;
     private Vector2 screenMiddle;
     private Vector3 lastContactPosition = Vector3.zero;
+    
+    private Collider lastCollider;
+    private ValveRotation cachedValveComponent;
+
+    ValveRotation GetCachedOrNewValve(Collider newCollider)
+    {
+        if (lastCollider != newCollider)
+        {
+            lastCollider = newCollider;
+            cachedValveComponent = newCollider.GetComponentInParent<ValveRotation>();
+        }
+        return cachedValveComponent;
+    }
 
     private void Start()
     {
@@ -51,7 +64,7 @@ public class RotatorController : MonoBehaviour
             Vector3 endVector = hitInfo.point - boundsCenter;
             
             float rotationAngle = Vector3.SignedAngle(startVector, endVector, Vector3.up);
-            hitInfo.collider.transform.parent.Rotate(Vector3.up, rotationAngle);
+            GetCachedOrNewValve(hitInfo.collider).Rotate(rotationAngle);
         }
         lastContactPosition = hitInfo.point;
     }
